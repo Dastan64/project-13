@@ -1296,7 +1296,6 @@ body {
 
 .direction__phone {
   display: block;
-  font-size: 1.5625rem;
   margin-top: 20px;
   color: #000;
 }
@@ -1512,6 +1511,10 @@ body {
     font-size: calc(22px + 0 * (100vw / 1440));
   }
 
+  .direction__phone {
+    font-size: calc(20px + 5 * (100vw / 1440));
+  }
+
   .info__price {
     font-size: calc(28px + 5 * (100vw / 1440));
   }
@@ -1692,6 +1695,10 @@ body {
 
   .boss .description__subheading {
     font-size: calc( 22px + 0 * ((100vw - 320px) / 1440));
+  }
+
+  .direction__phone {
+    font-size: calc( 20px + 8.5 * ((100vw - 320px) / 1440));
   }
 
   .info__price {
