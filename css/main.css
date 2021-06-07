@@ -412,6 +412,173 @@ template {
   src: url("../fonts/Geometria-ExtraBold.woff2") format("woff2"), url("../fonts/Geometria-ExtraBold.woff") format("woff");
 }
 
+.direction {
+  position: relative;
+  border: 1px solid rgba(42, 148, 226, 0.5);
+  border-radius: 10px;
+  padding: 35px 57px 15px 50px;
+}
+
+.direction span {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  display: inline-block;
+  width: 44px;
+  height: 99%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(1.21%, rgba(255, 255, 255, 0)), color-stop(12.81%, rgba(6, 112, 235, 0.1146)), color-stop(30.22%, rgba(6, 112, 235, 0.2866)), color-stop(47.17%, rgba(6, 112, 235, 0.4541)), color-stop(63.26%, rgba(6, 112, 235, 0.613)), color-stop(78.25%, rgba(6, 112, 235, 0.7611)), color-stop(91.73%, rgba(6, 112, 235, 0.8943)), color-stop(102.43%, #0670eb));
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 1.21%, rgba(6, 112, 235, 0.1146) 12.81%, rgba(6, 112, 235, 0.2866) 30.22%, rgba(6, 112, 235, 0.4541) 47.17%, rgba(6, 112, 235, 0.613) 63.26%, rgba(6, 112, 235, 0.7611) 78.25%, rgba(6, 112, 235, 0.8943) 91.73%, #0670eb 102.43%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 1.21%, rgba(6, 112, 235, 0.1146) 12.81%, rgba(6, 112, 235, 0.2866) 30.22%, rgba(6, 112, 235, 0.4541) 47.17%, rgba(6, 112, 235, 0.613) 63.26%, rgba(6, 112, 235, 0.7611) 78.25%, rgba(6, 112, 235, 0.8943) 91.73%, #0670eb 102.43%);
+  -webkit-clip-path: polygon(10% 0, 0 100%, 19% 0);
+          clip-path: polygon(10% 0, 0 100%, 19% 0);
+  opacity: 0.5;
+}
+
+.direction span::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  -webkit-transform: translateX(-3px);
+      -ms-transform: translateX(-3px);
+          transform: translateX(-3px);
+}
+
+.direction span::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 98%;
+  -webkit-transform: translateX(3px);
+      -ms-transform: translateX(3px);
+          transform: translateX(3px);
+}
+
+.direction__container {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.direction__heading {
+  font-size: 1.375rem;
+  font-family: "Geometria Bold", Arial, Helvetica, sans-serif;
+}
+
+.direction__boss-position {
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
+
+.direction__boss-name {
+  margin-top: 5px;
+}
+
+.direction__phone {
+  display: block;
+  margin-top: 20px;
+  color: #000;
+}
+
+.direction__mail {
+  display: inline-block;
+  margin-top: 15px;
+  color: #000;
+  text-decoration: underline;
+}
+
+.apartment {
+  border: 1px solid #f6f6f6;
+}
+
+.apartment__image {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.apartment__image img {
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  transition: -webkit-transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.apartment__image img:hover {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.apartment__heading {
+  cursor: pointer;
+  font-family: "Geometria ExtraBold", Arial, Helvetica, sans-serif;
+  margin-top: 30px;
+}
+
+.apartment__heading:hover {
+  color: #2a94e2;
+}
+
+.apartment__lot {
+  font-family: "Geometria Light", Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+
+.apartment__text {
+  padding: 0 30px;
+}
+
+.apartment__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.apartment__btn {
+  width: 100%;
+  padding: 18px 0;
+  border: none;
+  font-size: 1.125rem;
+  font-family: "Geometria Medium", Arial, Helvetica, sans-serif;
+  background-color: #f6f6f6;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.apartment__btn:hover {
+  background-color: #2a94e2;
+  color: #fff;
+}
+
+.info__price {
+  font-family: "Geometria Light", Arial, Helvetica, sans-serif;
+}
+
+.info__square-price,
+.info__floor {
+  margin-top: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -449,6 +616,10 @@ body {
 
 .body-lock {
   overflow: hidden;
+}
+
+.line-breaker {
+  display: block;
 }
 
 .header {
@@ -1022,6 +1193,47 @@ body {
   font-size: 1.375rem;
 }
 
+.apartments__tabs {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.apartments .tabs__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.apartments .tabs__nav-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border: 2px solid #f6f6f6;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.apartments .tabs__nav-btn_active {
+  background-color: #2a94e2;
+  color: #fff;
+}
+
+.apartments .tabs__nav-btn:not(.tabs__nav-btn_active):hover {
+  background-color: #f6f6f6;
+}
+
+.apartments .tabs__item {
+  display: none;
+  margin-top: 30px;
+}
+
+.apartments .tabs__item_active {
+  display: block;
+}
+
 .apartments__grid {
   display: grid;
   gap: 30px;
@@ -1225,173 +1437,6 @@ body {
   background-color: #2a94e2;
 }
 
-.direction {
-  position: relative;
-  border: 1px solid rgba(42, 148, 226, 0.5);
-  border-radius: 10px;
-  padding: 35px 57px 15px 50px;
-}
-
-.direction span {
-  position: absolute;
-  top: 20px;
-  left: 30px;
-  display: inline-block;
-  width: 44px;
-  height: 99%;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(1.21%, rgba(255, 255, 255, 0)), color-stop(12.81%, rgba(6, 112, 235, 0.1146)), color-stop(30.22%, rgba(6, 112, 235, 0.2866)), color-stop(47.17%, rgba(6, 112, 235, 0.4541)), color-stop(63.26%, rgba(6, 112, 235, 0.613)), color-stop(78.25%, rgba(6, 112, 235, 0.7611)), color-stop(91.73%, rgba(6, 112, 235, 0.8943)), color-stop(102.43%, #0670eb));
-  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 1.21%, rgba(6, 112, 235, 0.1146) 12.81%, rgba(6, 112, 235, 0.2866) 30.22%, rgba(6, 112, 235, 0.4541) 47.17%, rgba(6, 112, 235, 0.613) 63.26%, rgba(6, 112, 235, 0.7611) 78.25%, rgba(6, 112, 235, 0.8943) 91.73%, #0670eb 102.43%);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 1.21%, rgba(6, 112, 235, 0.1146) 12.81%, rgba(6, 112, 235, 0.2866) 30.22%, rgba(6, 112, 235, 0.4541) 47.17%, rgba(6, 112, 235, 0.613) 63.26%, rgba(6, 112, 235, 0.7611) 78.25%, rgba(6, 112, 235, 0.8943) 91.73%, #0670eb 102.43%);
-  -webkit-clip-path: polygon(10% 0, 0 100%, 19% 0);
-          clip-path: polygon(10% 0, 0 100%, 19% 0);
-  opacity: 0.5;
-}
-
-.direction span::before {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 100%;
-  -webkit-transform: translateX(-3px);
-      -ms-transform: translateX(-3px);
-          transform: translateX(-3px);
-}
-
-.direction span::after {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 98%;
-  -webkit-transform: translateX(3px);
-      -ms-transform: translateX(3px);
-          transform: translateX(3px);
-}
-
-.direction__container {
-  margin-top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.direction__heading {
-  font-size: 1.375rem;
-  font-family: "Geometria Bold", Arial, Helvetica, sans-serif;
-}
-
-.direction__boss-position {
-  font-size: 0.75rem;
-  opacity: 0.5;
-}
-
-.direction__boss-name {
-  margin-top: 5px;
-}
-
-.direction__phone {
-  display: block;
-  margin-top: 20px;
-  color: #000;
-}
-
-.direction__mail {
-  display: inline-block;
-  margin-top: 15px;
-  color: #000;
-  text-decoration: underline;
-}
-
-.apartment {
-  border: 1px solid #f6f6f6;
-}
-
-.apartment__image {
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.apartment__image img {
-  -webkit-transition: -webkit-transform 0.5s ease-out;
-  transition: -webkit-transform 0.5s ease-out;
-  -o-transition: transform 0.5s ease-out;
-  transition: transform 0.5s ease-out;
-  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
-}
-
-.apartment__image img:hover {
-  -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-          transform: scale(1.3);
-}
-
-.apartment__heading {
-  cursor: pointer;
-  font-family: "Geometria ExtraBold", Arial, Helvetica, sans-serif;
-  margin-top: 30px;
-}
-
-.apartment__heading:hover {
-  color: #2a94e2;
-}
-
-.apartment__lot {
-  font-family: "Geometria Light", Arial, Helvetica, sans-serif;
-  margin-top: 10px;
-}
-
-.apartment__text {
-  padding: 0 30px;
-}
-
-.apartment__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-
-.apartment__btn {
-  width: 100%;
-  padding: 18px 0;
-  border: none;
-  font-size: 1.125rem;
-  font-family: "Geometria Medium", Arial, Helvetica, sans-serif;
-  background-color: #f6f6f6;
-  cursor: pointer;
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.apartment__btn:hover {
-  background-color: #2a94e2;
-  color: #fff;
-}
-
-.info__price {
-  font-family: "Geometria Light", Arial, Helvetica, sans-serif;
-}
-
-.info__square-price,
-.info__floor {
-  margin-top: 20px;
-}
-
 .footer {
   background-color: #535860;
   color: #fff;
@@ -1483,6 +1528,14 @@ body {
 }
 
 @media (min-width: 767px) {
+  .direction__phone {
+    font-size: calc(20px + 5 * (100vw / 1440));
+  }
+
+  .info__price {
+    font-size: calc(28px + 5 * (100vw / 1440));
+  }
+
   .header .text__heading {
     font-size: calc(28px + 22 * (100vw / 1440));
   }
@@ -1509,14 +1562,6 @@ body {
 
   .boss .description__subheading {
     font-size: calc(22px + 0 * (100vw / 1440));
-  }
-
-  .direction__phone {
-    font-size: calc(20px + 5 * (100vw / 1440));
-  }
-
-  .info__price {
-    font-size: calc(28px + 5 * (100vw / 1440));
   }
 }
 
@@ -1564,6 +1609,10 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  .line-breaker {
+    display: none;
+  }
+
   .header__features {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1662,13 +1711,15 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .header .mobile-menu__nav {
-    width: 100%;
-  }
-}
-
 @media (max-width: 767px) {
+  .direction__phone {
+    font-size: calc( 20px + 8.5 * ((100vw - 320px) / 1440));
+  }
+
+  .info__price {
+    font-size: calc( 28px + 8.5 * ((100vw - 320px) / 1440));
+  }
+
   .header .text__heading {
     font-size: calc( 28px + 37.4 * ((100vw - 320px) / 1440));
   }
@@ -1696,13 +1747,11 @@ body {
   .boss .description__subheading {
     font-size: calc( 22px + 0 * ((100vw - 320px) / 1440));
   }
+}
 
-  .direction__phone {
-    font-size: calc( 20px + 8.5 * ((100vw - 320px) / 1440));
-  }
-
-  .info__price {
-    font-size: calc( 28px + 8.5 * ((100vw - 320px) / 1440));
+@media screen and (max-width: 767px) {
+  .header .mobile-menu__nav {
+    width: 100%;
   }
 }
 
@@ -1743,10 +1792,6 @@ body {
 }
 
 @media screen and (max-width: 566px) {
-  .directions__grid {
-    grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
-  }
-
   .direction__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1759,6 +1804,10 @@ body {
 
   .direction__image {
     padding-top: 30px;
+  }
+
+  .directions__grid {
+    grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
   }
 }
 
