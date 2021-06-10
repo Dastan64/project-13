@@ -495,7 +495,6 @@ template {
 }
 
 .apartment {
-  /* max-width: 555px; */
   border: 1px solid #f6f6f6;
 }
 
@@ -1216,7 +1215,7 @@ body {
   border: none;
   border: 2px solid #f6f6f6;
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 5px;
 }
 
 .apartments .tabs__nav-btn_active {
@@ -1759,6 +1758,13 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .apartments .tabs__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .about__gallery {
     display: none;
   }
