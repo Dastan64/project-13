@@ -873,7 +873,7 @@ body {
   border: none;
   border: 1px solid #2a94e2;
   border-radius: 5px;
-  padding: 12px 35px;
+  padding: 0.75em 2.1875em;
   width: 100%;
   margin-top: 10px;
   outline: none;
@@ -948,7 +948,7 @@ body {
   background-color: #2a94e2;
   color: #fff;
   font-size: 20px;
-  padding: 22px 30px;
+  padding: 1.1em 1.5em;
   border: 2px solid #2a94e2;
   border-radius: 5px;
   margin-top: 40px;
@@ -1164,7 +1164,7 @@ body {
   border: none;
   border-radius: 5px;
   margin-top: 20px;
-  padding: 19px 27px;
+  padding: 1.1875em 1.6875em;
   color: #fff;
   font-family: "Geometria Medium", Arial, Helvetica, sans-serif;
   background-color: #2a94e2;
@@ -1218,7 +1218,7 @@ body {
   border: none;
   border: 2px solid #f6f6f6;
   width: 100%;
-  padding: 20px 5px;
+  padding: 1.25em 0.3125em;
 }
 
 .apartments .tabs__nav-btn_active {
@@ -1259,7 +1259,7 @@ body {
   background-color: #f6f6f6;
   border: none;
   width: 100%;
-  padding: 20px 0;
+  padding: 1.25em 0;
   -webkit-transition: background-color 0.3s ease, color 0.3s ease;
   -o-transition: background-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -1313,7 +1313,7 @@ body {
 
 .about__btn {
   width: 270px;
-  padding: 16px 22px;
+  padding: 0.8em 1.375em;
   margin-top: 20px;
   border: none;
   border-radius: 5px;
@@ -1395,7 +1395,7 @@ body {
   border-radius: 5px;
   font-size: 1.25rem;
   font-family: "Geometria Medium", Arial, Helvetica, sans-serif;
-  padding: 16px 22px;
+  padding: 0.8em 1.375em;
   width: 270px;
   margin-top: 20px;
   -webkit-transition: color 0.3s ease, background-color 0.3s ease;
@@ -1514,7 +1514,7 @@ body {
 
 .footer__contact-btn {
   cursor: pointer;
-  padding: 17px 23px;
+  padding: 1.0625em 1.4375em;
   margin-top: 20px;
   width: 100%;
   border: none;
