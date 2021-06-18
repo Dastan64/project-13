@@ -660,32 +660,32 @@ body {
   z-index: 5;
   -webkit-animation-name: showHeader;
           animation-name: showHeader;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
 @-webkit-keyframes showHeader {
-  0% {
-    opacity: 0;
+  from {
     top: -70px;
+    opacity: 0;
   }
 
-  100% {
-    opacity: 1;
+  to {
     top: 0;
+    opacity: 1;
   }
 }
 
 @keyframes showHeader {
-  0% {
-    opacity: 0;
+  from {
     top: -70px;
+    opacity: 0;
   }
 
-  100% {
-    opacity: 1;
+  to {
     top: 0;
+    opacity: 1;
   }
 }
 
